@@ -1,0 +1,23 @@
+﻿@model List<UserViewModel>
+
+<h1>Admin Page - List of Users</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <!-- Add additional table headers as needed -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <!-- Render additional user properties accordingly -->
+            </tr>
+        }
+    </tbody>
+</table>
